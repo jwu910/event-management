@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "start": "http-server . -p 4000"
   },
   "repository": {
     "type": "git",
@@ -17,10 +18,15 @@
   },
   "homepage": "https://github.com/jwu910/event-management#readme",
   "babel": {
-    "presets": ["metal", "metal-jsx"]
+    "presets": [
+      "metal",
+      "metal-jsx"
+    ]
   },
   "dependencies": {
     "bootstrap": "^3.3.6",
+    "incremental-dom": "^0.5.1",
+    "incremental-dom-string": "0.0.2",
     "metal-jsx": "^2.0.0"
   },
   "devDependencies": {
